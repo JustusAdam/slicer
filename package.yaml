@@ -1,0 +1,22 @@
+name: slicer
+
+default-extensions:
+  - NamedFieldPuns
+  - TypeFamilies
+  - TupleSections
+
+library:
+  source-dirs: src
+  dependencies:
+    - base
+    - containers
+
+executables:
+  slicer:
+    source-dirs: app
+    main: Main.hs
+    dependencies:
+      - base
+      - containers
+      - slicer
+      - lens
